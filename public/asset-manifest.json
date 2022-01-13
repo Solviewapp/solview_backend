@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.9e860522.chunk.css",
-    "main.js": "/static/js/main.5267f025.chunk.js",
-    "main.js.map": "/static/js/main.5267f025.chunk.js.map",
+    "main.css": "/static/css/main.392751b4.chunk.css",
+    "main.js": "/static/js/main.2bdae804.chunk.js",
+    "main.js.map": "/static/js/main.2bdae804.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.96470455.js",
     "runtime-main.js.map": "/static/js/runtime-main.96470455.js.map",
     "static/css/2.7cb95d4e.chunk.css": "/static/css/2.7cb95d4e.chunk.css",
-    "static/js/2.59f41f57.chunk.js": "/static/js/2.59f41f57.chunk.js",
-    "static/js/2.59f41f57.chunk.js.map": "/static/js/2.59f41f57.chunk.js.map",
+    "static/js/2.719e961d.chunk.js": "/static/js/2.719e961d.chunk.js",
+    "static/js/2.719e961d.chunk.js.map": "/static/js/2.719e961d.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.7cb95d4e.chunk.css.map": "/static/css/2.7cb95d4e.chunk.css.map",
-    "static/css/main.9e860522.chunk.css.map": "/static/css/main.9e860522.chunk.css.map",
-    "static/js/2.59f41f57.chunk.js.LICENSE.txt": "/static/js/2.59f41f57.chunk.js.LICENSE.txt",
+    "static/css/main.392751b4.chunk.css.map": "/static/css/main.392751b4.chunk.css.map",
+    "static/js/2.719e961d.chunk.js.LICENSE.txt": "/static/js/2.719e961d.chunk.js.LICENSE.txt",
     "static/media/Address_blue.e0505a3e.svg": "/static/media/Address_blue.e0505a3e.svg",
     "static/media/Address_white.0bc9cf7f.svg": "/static/media/Address_white.0bc9cf7f.svg",
     "static/media/Buy.cd89ac12.svg": "/static/media/Buy.cd89ac12.svg",
@@ -33,6 +33,7 @@
     "static/media/pair.ac4ea277.svg": "/static/media/pair.ac4ea277.svg",
     "static/media/solview.png": "/static/media/solview.ec8c1531.png",
     "static/media/solview_1.89caec24.png": "/static/media/solview_1.89caec24.png",
+    "static/media/staking.637fbdfd.svg": "/static/media/staking.637fbdfd.svg",
     "static/media/staking_white.3a573a68.svg": "/static/media/staking_white.3a573a68.svg",
     "static/media/trade_White.94d4e9bd.svg": "/static/media/trade_White.94d4e9bd.svg",
     "static/media/trend-down_White.2975af93.svg": "/static/media/trend-down_White.2975af93.svg",
@@ -41,8 +42,8 @@
   "entrypoints": [
     "static/js/runtime-main.96470455.js",
     "static/css/2.7cb95d4e.chunk.css",
-    "static/js/2.59f41f57.chunk.js",
-    "static/css/main.9e860522.chunk.css",
-    "static/js/main.5267f025.chunk.js"
+    "static/js/2.719e961d.chunk.js",
+    "static/css/main.392751b4.chunk.css",
+    "static/js/main.2bdae804.chunk.js"
   ]
 }
