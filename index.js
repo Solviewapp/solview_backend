@@ -27,6 +27,7 @@ app.use(express.static(__dirname + "/files"));
 app.use('/trade', routes.trade);
 app.use('/dashboard', routes.dashboard);
 app.use('/banner', routes.banner);
+app.use('/staking', routes.staking);
 
 app.get('*', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');

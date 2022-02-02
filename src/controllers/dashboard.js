@@ -1,5 +1,4 @@
 const Dashboard = require('../models/dashboard');
-
 exports.initData = async (req, res) => {
     await Dashboard.find({ owner: req.body.publickey }).exec(function (err, data) {
         if (err) {

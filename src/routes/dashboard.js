@@ -14,4 +14,5 @@ router.post('/insertData', (req, res) => {
 router.post('/moreData', (req, res) => {
     dashboard.moreData(req, res);
 })
+
 module.exports = router;
