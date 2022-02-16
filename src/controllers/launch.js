@@ -32,7 +32,7 @@ exports.insertData = async (req, res) => {
             });
             if (req.files && req.files.projectImgFile) {
                 await Launch.findOneAndUpdate({ id: req.body.id }, {
-                    projectImg: ('https://solview.app/' + req.body.projectImgName),
+                    projectImg: ('https://admin.solview.app/' + req.body.projectImgName),
                     projectImgFile: req.body.projectImgName,
                     projectImgName: req.body.projectImgName,
                 }).exec(async function (err, data) {
@@ -43,7 +43,7 @@ exports.insertData = async (req, res) => {
             }
             if (req.files && req.files.blockchainImgFile) {
                 await Launch.findOneAndUpdate({ id: req.body.id }, {
-                    blockchainImg: ('https://solview.app/' + req.body.blockchainImgName),
+                    blockchainImg: ('https://admin.solview.app/' + req.body.blockchainImgName),
                     blockchainImgFile: req.body.blockchainImgName,
                     blockchainImgName: req.body.blockchainImgName,
                 }).exec(async function (err, data) {
@@ -54,7 +54,7 @@ exports.insertData = async (req, res) => {
             }
             if (req.files && req.files.detailPhotoFile) {
                 await Launch.findOneAndUpdate({ id: req.body.id }, {
-                    detailPhoto: ('https://solview.app/' + req.body.detailPhotoName),
+                    detailPhoto: ('https://admin.solview.app/' + req.body.detailPhotoName),
                     detailPhotoFile: req.body.detailPhotoName,
                     detailPhotoName: req.body.detailPhotoName,
                 }).exec(async function (err, data) {
@@ -70,10 +70,10 @@ exports.insertData = async (req, res) => {
             if (req.files && req.files.detailPhotoFile) {
                 var newLaunch = new Launch({
                     id: req.body.id,
-                    projectImg: ('https://solview.app/' + req.body.projectImgName),
+                    projectImg: ('https://admin.solview.app/' + req.body.projectImgName),
                     projectImgFile: req.body.projectImgName,
                     projectImgName: req.body.projectImgName,
-                    blockchainImg: ('https://solview.app/' + req.body.blockchainImgName),
+                    blockchainImg: ('https://admin.solview.app/' + req.body.blockchainImgName),
                     blockchainImgFile: req.body.projectImgName,
                     blockchainImgName: req.body.blockchainImgName,
                     projectName: req.body.projectName,
@@ -96,7 +96,7 @@ exports.insertData = async (req, res) => {
                     level5: req.body.level5,
                     level6: req.body.level6,
                     detailText: req.body.detailText,
-                    detailPhoto: ('https://solview.app/' + req.body.detailPhotoName),
+                    detailPhoto: ('https://admin.solview.app/' + req.body.detailPhotoName),
                     detailPhotoFile: req.body.detailPhotoName,
                     detailPhotoName: req.body.detailPhotoName,
                     display: req.body.display
@@ -112,10 +112,10 @@ exports.insertData = async (req, res) => {
             else {
                 var newLaunch = new Launch({
                     id: req.body.id,
-                    projectImg: ('https://solview.app/' + req.body.projectImgName),
+                    projectImg: ('https://admin.solview.app/' + req.body.projectImgName),
                     projectImgFile: req.body.projectImgName,
                     projectImgName: req.body.projectImgName,
-                    blockchainImg: ('https://solview.app/' + req.body.blockchainImgName),
+                    blockchainImg: ('https://admin.solview.app/' + req.body.blockchainImgName),
                     blockchainImgFile: req.body.projectImgName,
                     blockchainImgName: req.body.blockchainImgName,
                     projectName: req.body.projectName,
