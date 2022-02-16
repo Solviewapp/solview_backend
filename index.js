@@ -9,6 +9,7 @@ dotenv.config();
 const routes = require('./src/routes');
 const app = express();
 const bannerController = require('./src/controllers/banner');
+const launchController = require('./src/controllers/launch');
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -29,6 +30,8 @@ app.use('/dashboard', routes.dashboard);
 app.use('/banner', routes.banner);
 app.use('/staking', routes.staking);
 app.use('/user', routes.user);
+app.use('/launch', routes.launch);
+app.use('/ido', routes.ido);
 
 app.get('*', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');
@@ -37,7 +40,6 @@ app.post("/file", async (req, res) => {
   const newpath = __dirname + "/files/"
   const file = req.files.file
   const filename = req.body.fileName
-
   await file.mv(`${newpath}${filename}`, async (err) => {
     if (err) {
       res.status(500).send({ message: "File upload failed", code: 200 });
@@ -46,6 +48,41 @@ app.post("/file", async (req, res) => {
       await bannerController.insertData(req, res);
     }
   });
+});
+app.post("/launchFile", async (req, res) => {
+  const newpath = __dirname + "/files/"
+  console.log(req.files, "file")
+  if (req.files && req.files.blockchainImgFile) {
+    const file = req.files.blockchainImgFile;
+    const fileName = req.body.blockchainImgName;
+    await file.mv(`${newpath}${fileName}`, async (err) => {
+      if (err) {
+        console.log(err)
+      }
+      else {
+      }
+    });
+  }
+  if (req.files && req.files.projectImgFile) {
+    await req.files.projectImgFile.mv(`${newpath}${req.body.projectImgName}`, async (err) => {
+      if (err) {
+        console.log(err)
+      }
+      else {
+      }
+    });
+  }
+  if (req.files && req.files.detailPhotoFile) {
+    await req.files.detailPhotoFile.mv(`${newpath}${req.body.detailPhotoName}`, async (err) => {
+      if (err) {
+        res.status(500).send({ message: "File upload failed", code: 200 });
+      }
+      else {
+      }
+    });
+  }
+  await launchController.insertData(req, res);
+
 });
 
 
