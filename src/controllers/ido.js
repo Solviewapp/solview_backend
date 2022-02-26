@@ -32,7 +32,7 @@ exports.create = async (req, res) => {
             res.send({ result: 'success' });
         }
         else {
-            var newIdo = new Ido({ id: req.body.id, address: req.body.address, amount: req.body.amount, status: req.body.status, tokenPrice: req.body.tokenPrice, tokenAmount: req.body.tokenAmount, tokenName: req.body.tokenName, projectName: req.body.projectName });
+            var newIdo = new Ido({ id: req.body.id, address: req.body.address, amount: req.body.amount, status: req.body.status, tokenPrice: req.body.tokenPrice, tokenAmount: req.body.tokenAmount, tokenName: req.body.tokenName, projectName: req.body.projectName, txHash: req.body.txHash });
             newIdo.save(async function (err) {
                 if (err) {
                     console.log(err);

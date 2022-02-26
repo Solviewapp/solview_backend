@@ -33,8 +33,12 @@ let mainBonusSchema = new Schema({
     projectName: {
         type: String,
         required: false
+    },
+    txHash: {
+        type: String,
+        required: false
     }
 
 });
 
-module.exports = mongoose.model('ido', mainBonusSchema);
+module.exports = mongoose.model('idoTb', mainBonusSchema);
