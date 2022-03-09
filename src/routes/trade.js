@@ -11,6 +11,15 @@ router.post('/insertData', (req, res) => {
     trade.insertData(req, res);
 })
 
+router.get('/chartESh', async (req, res) => {
+    var tradeResult = await axios.get('https://www.coingecko.com/ohlc/8608/series/usd/30_days.json');
+    if (tradeResult.data) {
+        res.send({ result: 'success', data: tradeResult.data })
+    } else {
+        res.send({ result: "fail" })
+    }
+})
+
 
 router.post('/trade', async (req, res, next) => {
     var tradeResult = await axios.get('https://nomics.com/data/currencies-ticker?filter=any&include-transparency=true&interval=1h,1d,7d,30d,365d,ytd&quote-currency=USD&symbols=' + req.body.token);

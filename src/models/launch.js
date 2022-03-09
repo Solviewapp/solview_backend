@@ -83,6 +83,10 @@ let Launchpad = new Schema({
         type: String,
         required: false
     },
+    level0: {
+        type: String,
+        required: false
+    },
     level1: {
         type: String,
         required: false

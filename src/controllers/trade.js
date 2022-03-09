@@ -35,6 +35,8 @@ exports.initData = async (req, res) => {
         }
     });
 };
+
+
 exports.insertData = async (req, res) => {
     console.log(req.body.data, "data")
     var filter = req.body.data[0];
